@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+   <servlet>
+    <servlet-name>SigninServlet</servlet-name>
+    <servlet-class>overweight.servlet.SigninServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>overweight.servlet.WelcomeServlet</servlet-class>
+  </servlet>
+ 
+  <servlet>
+    <servlet-name>registerPatient</servlet-name>
+    <servlet-class>overweight.servlet.RegisterPatient</servlet-class>
+  </servlet>
+ <servlet>
+    <servlet-name>registerDoctort</servlet-name>
+    <servlet-class>overweight.servlet.RegisterDoctor</servlet-class>
+  </servlet>
+ <servlet>
+    <servlet-name>switchregistration</servlet-name>
+    <servlet-class>overweight.servlet.SwitchServelet</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>about_me</servlet-name>
+    <servlet-class>overweight.servlet.AboutMeServelet</servlet-class>
+  </servlet>
+
+<!--    <servlet> -->
+<!--     <servlet-name>assignPatient</servlet-name> -->
+<!--     <servlet-class>overweight.servlet.AssignPatient</servlet-class> -->
+<!--   </servlet> -->
+    
+   <servlet>
+    <servlet-name>listPatients</servlet-name>
+    <servlet-class>overweight.servlet.ListPatientsServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>listUserServelet</servlet-name>
+    <servlet-class>overweight.servlet.ListUserServelet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>treatmentServelet</servlet-name>
+    <servlet-class>overweight.servlet.TreatmentServelet</servlet-class>
+  </servlet>
+  
+ <!--  <servlet>
+  	<servlet-name>doctorCours</servlet-name>
+  	<servlet-class>overweight.servlet.DoctorCourses</servlet-class>
+  </servlet> -->
+  
+  <servlet>
+  		<servlet-name>patientBarChart</servlet-name>
+  		<servlet-class>overweight.servlet.PatientBarChart</servlet-class>
+  </servlet>
+
+
+
+<servlet>
+	<servlet-name>servletConstrains</servlet-name>
+	<servlet-class>overweight.servlet.ConstrainsServlet</servlet-class>
+</servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>SigninServlet</servlet-name>
+    <url-pattern>/servlet_login</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/servlet_welcome</url-pattern>
+  </servlet-mapping> 
+ 
+   <servlet-mapping>
+    <servlet-name>registerPatient</servlet-name>
+    <url-pattern>/register_Patient</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet-mapping>
+    <servlet-name>registerDoctort</servlet-name>
+    <url-pattern>/register_Doctor</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet-mapping>
+    <servlet-name>switchregistration</servlet-name>
+    <url-pattern>/switch_registration</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>about_me</servlet-name>
+    <url-pattern>/aboutMe</url-pattern>
+  </servlet-mapping>
+  
+<!--   <servlet-mapping> -->
+<!--     <servlet-name>assignPatient</servlet-name> -->
+<!--     <url-pattern>/assign_Patient</url-pattern> -->
+<!--   </servlet-mapping> -->
+ 
+  <servlet-mapping>
+    <servlet-name>listPatients</servlet-name>
+    <url-pattern>/list_Patients</url-pattern>
+  </servlet-mapping> 
+  
+  
+   <servlet-mapping>
+    <servlet-name>listUserServelet</servlet-name>
+    <url-pattern>/list_UserServelet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+	  <servlet-name>treatmentServelet</servlet-name>
+	  <url-pattern>/treatment_Servelet</url-pattern>
+  </servlet-mapping>
+  
+<!--   <servlet-mapping> -->
+<!--       <servlet-name>doctorCours</servlet-name> -->
+<!--       <url-pattern>/course_Doctor</url-pattern> -->
+<!--   </servlet-mapping> -->
+  
+  <servlet-mapping>
+	  	<servlet-name>patientBarChart</servlet-name>
+	  	<url-pattern>/patientBarChart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  		<servlet-name>servletConstrains</servlet-name>
+  		<url-pattern>/servlet_constrains</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+<welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+</web-app>
